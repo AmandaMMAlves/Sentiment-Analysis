@@ -1,0 +1,952 @@
+
+
+MBayes
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.932     0.945     0.939      1285
+          H      0.944     0.932     0.938      1285
+
+avg / total      0.938     0.938     0.938      2570
+
+
+
+Acurácia do modelo:  0.9381322957198444
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1214    71  1285
+H          88  1197  1285
+All      1302  1268  2570 
+
+MSE (Mean squared error)   0.061867704280155644
+
+RMSE (Root mean squared error)   0.24873219389567497
+
+
+
+
+Tempo de Stemming e Bigrama: 3.8339948654174805 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.938     0.949     0.943      1285
+          H      0.948     0.937     0.942      1285
+
+avg / total      0.943     0.943     0.943      2570
+
+
+
+Acurácia do modelo:  0.9428015564202334
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1219    66  1285
+H          81  1204  1285
+All      1300  1270  2570 
+
+MSE (Mean squared error)   0.057198443579766535
+
+RMSE (Root mean squared error)   0.23916196097993203
+
+
+
+
+Tempo de apenas Stemming: 4.36800479888916 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.934     0.950     0.942      1285
+          H      0.949     0.933     0.941      1285
+
+avg / total      0.942     0.942     0.942      2570
+
+
+
+Acurácia do modelo:  0.9416342412451362
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1221    64  1285
+H          86  1199  1285
+All      1307  1263  2570 
+
+MSE (Mean squared error)   0.058365758754863814
+
+RMSE (Root mean squared error)   0.2415900634439749
+
+
+
+
+Tempo de apenas Bigrama: 0.7429966926574707 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.941     0.942     0.942      1285
+          H      0.942     0.941     0.942      1285
+
+avg / total      0.942     0.942     0.942      2570
+
+
+
+Acurácia do modelo:  0.9416342412451362
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1211    74  1285
+H          76  1209  1285
+All      1287  1283  2570 
+
+MSE (Mean squared error)   0.058365758754863814
+
+RMSE (Root mean squared error)   0.2415900634439749
+
+
+
+
+Tempo de resultados puros: 0.6760005950927734 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 9.620996952056885 segundos
+
+
+KNN
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.746     0.904     0.818      1285
+          H      0.879     0.693     0.775      1285
+
+avg / total      0.812     0.798     0.796      2570
+
+
+
+Acurácia do modelo:  0.798443579766537
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1162   123  1285
+H         395   890  1285
+All      1557  1013  2570 
+
+MSE (Mean squared error)   0.20155642023346304
+
+RMSE (Root mean squared error)   0.4489503538627217
+
+
+
+
+Tempo de Stemming e Bigrama: 4.811828136444092 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.820     0.827     0.824      1285
+          H      0.826     0.819     0.822      1285
+
+avg / total      0.823     0.823     0.823      2570
+
+
+
+Acurácia do modelo:  0.8229571984435797
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1063   222  1285
+H         233  1052  1285
+All      1296  1274  2570 
+
+MSE (Mean squared error)   0.17704280155642024
+
+RMSE (Root mean squared error)   0.42076454408186564
+
+
+
+
+Tempo de apenas Stemming: 5.13017463684082 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.728     0.880     0.797      1285
+          H      0.848     0.671     0.749      1285
+
+avg / total      0.788     0.775     0.773      2570
+
+
+
+Acurácia do modelo:  0.7754863813229572
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1131   154  1285
+H         423   862  1285
+All      1554  1016  2570 
+
+MSE (Mean squared error)   0.2245136186770428
+
+RMSE (Root mean squared error)   0.47382868072441836
+
+
+
+
+Tempo de apenas Bigrama: 1.5590040683746338 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.789     0.872     0.828      1285
+          H      0.857     0.767     0.809      1285
+
+avg / total      0.823     0.819     0.819      2570
+
+
+
+Acurácia do modelo:  0.8190661478599222
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1120   165  1285
+H         300   985  1285
+All      1420  1150  2570 
+
+MSE (Mean squared error)   0.18093385214007782
+
+RMSE (Root mean squared error)   0.4253632002654647
+
+
+
+
+Tempo de resultados puros: 1.484997034072876 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 12.986003875732422 segundos
+
+
+LR
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.917     0.952     0.934      1285
+          H      0.950     0.914     0.931      1285
+
+avg / total      0.933     0.933     0.933      2570
+
+
+
+Acurácia do modelo:  0.9326848249027238
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1223    62  1285
+H         111  1174  1285
+All      1334  1236  2570 
+
+MSE (Mean squared error)   0.06731517509727626
+
+RMSE (Root mean squared error)   0.25945168162352744
+
+
+
+
+Tempo de Stemming e Bigrama: 5.521996974945068 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.919     0.949     0.934      1285
+          H      0.948     0.916     0.932      1285
+
+avg / total      0.933     0.933     0.933      2570
+
+
+
+Acurácia do modelo:  0.9326848249027238
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1220    65  1285
+H         108  1177  1285
+All      1328  1242  2570 
+
+MSE (Mean squared error)   0.06731517509727626
+
+RMSE (Root mean squared error)   0.25945168162352744
+
+
+
+
+Tempo de apenas Stemming: 5.574004888534546 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.917     0.958     0.937      1285
+          H      0.956     0.914     0.934      1285
+
+avg / total      0.937     0.936     0.936      2570
+
+
+
+Acurácia do modelo:  0.9357976653696498
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1231    54  1285
+H         111  1174  1285
+All      1342  1228  2570 
+
+MSE (Mean squared error)   0.06420233463035019
+
+RMSE (Root mean squared error)   0.25338179617002915
+
+
+
+
+Tempo de apenas Bigrama: 0.8859972953796387 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.914     0.956     0.935      1285
+          H      0.954     0.910     0.931      1285
+
+avg / total      0.934     0.933     0.933      2570
+
+
+
+Acurácia do modelo:  0.9330739299610895
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1229    56  1285
+H         116  1169  1285
+All      1345  1225  2570 
+
+MSE (Mean squared error)   0.0669260700389105
+
+RMSE (Root mean squared error)   0.2587007345155991
+
+
+
+
+Tempo de resultados puros: 0.6190037727355957 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 12.601002931594849 segundos
+
+
+RF
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.905     0.946     0.925      1285
+          H      0.943     0.900     0.921      1285
+
+avg / total      0.924     0.923     0.923      2570
+
+
+
+Acurácia do modelo:  0.9229571984435798
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1215    70  1285
+H         128  1157  1285
+All      1343  1227  2570 
+
+MSE (Mean squared error)   0.07704280155642024
+
+RMSE (Root mean squared error)   0.27756585084700214
+
+
+
+
+Tempo de Stemming e Bigrama: 19.516984462738037 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.924     0.934     0.929      1285
+          H      0.933     0.923     0.928      1285
+
+avg / total      0.928     0.928     0.928      2570
+
+
+
+Acurácia do modelo:  0.9284046692607004
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1200    85  1285
+H          99  1186  1285
+All      1299  1271  2570 
+
+MSE (Mean squared error)   0.0715953307392996
+
+RMSE (Root mean squared error)   0.2675730381396818
+
+
+
+
+Tempo de apenas Stemming: 10.372993469238281 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.905     0.956     0.930      1285
+          H      0.953     0.900     0.926      1285
+
+avg / total      0.929     0.928     0.928      2570
+
+
+
+Acurácia do modelo:  0.9276264591439689
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1228    57  1285
+H         129  1156  1285
+All      1357  1213  2570 
+
+MSE (Mean squared error)   0.07237354085603113
+
+RMSE (Root mean squared error)   0.2690233091314415
+
+
+
+
+Tempo de apenas Bigrama: 17.173001766204834 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.912     0.949     0.931      1285
+          H      0.947     0.909     0.928      1285
+
+avg / total      0.930     0.929     0.929      2570
+
+
+
+Acurácia do modelo:  0.9291828793774319
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1220    65  1285
+H         117  1168  1285
+All      1337  1233  2570 
+
+MSE (Mean squared error)   0.07081712062256809
+
+RMSE (Root mean squared error)   0.26611486358820335
+
+
+
+
+Tempo de resultados puros: 6.5779969692230225 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 53.640976667404175 segundos
+
+
+SVM_RBF
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.505     0.788     0.616      1285
+          H      0.519     0.229     0.318      1285
+
+avg / total      0.512     0.509     0.467      2570
+
+
+
+Acurácia do modelo:  0.5085603112840467
+
+
+Matriz de confusão
+
+
+Predito     B    H   All
+Real                    
+B        1013  272  1285
+H         991  294  1285
+All      2004  566  2570 
+
+MSE (Mean squared error)   0.4914396887159533
+
+RMSE (Root mean squared error)   0.7010275948320104
+
+
+
+
+Tempo de Stemming e Bigrama: 19.189915657043457 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.511     0.894     0.650      1285
+          H      0.576     0.144     0.230      1285
+
+avg / total      0.544     0.519     0.440      2570
+
+
+
+Acurácia do modelo:  0.5190661478599222
+
+
+Matriz de confusão
+
+
+Predito     B    H   All
+Real                    
+B        1149  136  1285
+H        1100  185  1285
+All      2249  321  2570 
+
+MSE (Mean squared error)   0.48093385214007783
+
+RMSE (Root mean squared error)   0.6934939452800419
+
+
+
+
+Tempo de apenas Stemming: 14.243812561035156 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.508     0.893     0.647      1285
+          H      0.558     0.135     0.218      1285
+
+avg / total      0.533     0.514     0.433      2570
+
+
+
+Acurácia do modelo:  0.5140077821011673
+
+
+Matriz de confusão
+
+
+Predito     B    H   All
+Real                    
+B        1147  138  1285
+H        1111  174  1285
+All      2258  312  2570 
+
+MSE (Mean squared error)   0.4859922178988327
+
+RMSE (Root mean squared error)   0.697131420823099
+
+
+
+
+Tempo de apenas Bigrama: 14.567998886108398 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.501     0.684     0.578      1285
+          H      0.501     0.318     0.389      1285
+
+avg / total      0.501     0.501     0.483      2570
+
+
+
+Acurácia do modelo:  0.5007782101167315
+
+
+Matriz de confusão
+
+
+Predito     B    H   All
+Real                    
+B         879  406  1285
+H         877  408  1285
+All      1756  814  2570 
+
+MSE (Mean squared error)   0.4992217898832685
+
+RMSE (Root mean squared error)   0.7065562892532119
+
+
+
+
+Tempo de resultados puros: 11.918003797531128 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 59.92073082923889 segundos
+
+
+SVM_L
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.913     0.934     0.923      1285
+          H      0.932     0.911     0.921      1285
+
+avg / total      0.922     0.922     0.922      2570
+
+
+
+Acurácia do modelo:  0.9221789883268483
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1200    85  1285
+H         115  1170  1285
+All      1315  1255  2570 
+
+MSE (Mean squared error)   0.07782101167315175
+
+RMSE (Root mean squared error)   0.27896417632583537
+
+
+
+
+Tempo de Stemming e Bigrama: 10.507022142410278 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.911     0.928     0.919      1285
+          H      0.927     0.909     0.918      1285
+
+avg / total      0.919     0.919     0.919      2570
+
+
+
+Acurácia do modelo:  0.9186770428015564
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1193    92  1285
+H         117  1168  1285
+All      1310  1260  2570 
+
+MSE (Mean squared error)   0.08132295719844358
+
+RMSE (Root mean squared error)   0.2851718029512097
+
+
+
+
+Tempo de apenas Stemming: 7.765980958938599 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.907     0.944     0.925      1285
+          H      0.942     0.904     0.922      1285
+
+avg / total      0.924     0.924     0.924      2570
+
+
+
+Acurácia do modelo:  0.9237354085603113
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1213    72  1285
+H         124  1161  1285
+All      1337  1233  2570 
+
+MSE (Mean squared error)   0.07626459143968872
+
+RMSE (Root mean squared error)   0.27616044510336507
+
+
+
+
+Tempo de apenas Bigrama: 5.753997087478638 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.907     0.931     0.919      1285
+          H      0.929     0.905     0.917      1285
+
+avg / total      0.918     0.918     0.918      2570
+
+
+
+Acurácia do modelo:  0.9178988326848249
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1196    89  1285
+H         122  1163  1285
+All      1318  1252  2570 
+
+MSE (Mean squared error)   0.0821011673151751
+
+RMSE (Root mean squared error)   0.2865330126096731
+
+
+
+
+Tempo de resultados puros: 3.581007719039917 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 27.60800790786743 segundos
+
+
+SVM_SVC
+
+
+Aplicando Stemming e Bigrama
+             precision    recall  f1-score   support
+
+          B      0.916     0.939     0.927      1285
+          H      0.937     0.914     0.925      1285
+
+avg / total      0.926     0.926     0.926      2570
+
+
+
+Acurácia do modelo:  0.9260700389105059
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1206    79  1285
+H         111  1174  1285
+All      1317  1253  2570 
+
+MSE (Mean squared error)   0.07392996108949416
+
+RMSE (Root mean squared error)   0.27190064562169425
+
+
+
+
+Tempo de Stemming e Bigrama: 4.801992177963257 segundos
+
+
+Aplicando apenas Stemming
+             precision    recall  f1-score   support
+
+          B      0.910     0.926     0.918      1285
+          H      0.925     0.908     0.916      1285
+
+avg / total      0.917     0.917     0.917      2570
+
+
+
+Acurácia do modelo:  0.9171206225680933
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1190    95  1285
+H         118  1167  1285
+All      1308  1262  2570 
+
+MSE (Mean squared error)   0.08287937743190661
+
+RMSE (Root mean squared error)   0.2878877861804954
+
+
+
+
+Tempo de apenas Stemming: 5.13401198387146 segundos
+
+
+Aplicando apenas Bigrama
+             precision    recall  f1-score   support
+
+          B      0.910     0.940     0.925      1285
+          H      0.938     0.907     0.922      1285
+
+avg / total      0.924     0.923     0.923      2570
+
+
+
+Acurácia do modelo:  0.9233463035019456
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1208    77  1285
+H         120  1165  1285
+All      1328  1242  2570 
+
+MSE (Mean squared error)   0.07665369649805448
+
+RMSE (Root mean squared error)   0.27686403973440554
+
+
+
+
+Tempo de apenas Bigrama: 1.175011396408081 segundos
+
+
+Demonstrando resultados puros
+             precision    recall  f1-score   support
+
+          B      0.916     0.939     0.927      1285
+          H      0.937     0.914     0.925      1285
+
+avg / total      0.926     0.926     0.926      2570
+
+
+
+Acurácia do modelo:  0.9260700389105059
+
+
+Matriz de confusão
+
+
+Predito     B     H   All
+Real                     
+B        1206    79  1285
+H         111  1174  1285
+All      1317  1253  2570 
+
+MSE (Mean squared error)   0.07392996108949416
+
+RMSE (Root mean squared error)   0.27190064562169425
+
+
+
+
+Tempo de resultados puros: 0.5869762897491455 segundos
+
+
+--------------------------------------------------
+
+Tempo total: 11.697991847991943 segundos

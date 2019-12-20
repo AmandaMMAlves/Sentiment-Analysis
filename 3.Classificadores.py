@@ -12,7 +12,7 @@ import time
 import configs as cf
 
 orig_stdout = sys.stdout
-f = open('Resultados_Massa2570_FINAL_2.txt', 'w')
+f = open('Resultados_Massa2570.txt', 'w')
 sys.stdout = f
 
         
